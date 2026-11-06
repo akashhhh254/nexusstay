@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::selection {
+  background: rgba(44, 107, 242, 0.18);
+}
+
+.table-card {
+  @apply overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft;
+}
+
+.card-grid {
+  @apply grid gap-4 md:grid-cols-2 xl:grid-cols-3;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium;
+}
